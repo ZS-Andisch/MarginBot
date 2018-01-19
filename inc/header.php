@@ -166,7 +166,7 @@ $gen->checkCronStatus();
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Feedback <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="mailto:<?=$config['app_support_email'];?>">Email</a></li>
-                            <li><a href="<?=$config['app_support_url'];?>">Forums</a></li>
+                            <li><a href="<?=$config['app_support_url'];?>" target="_blank">Forums</a></li>
                         </ul>
                     </li>
                     <li><a href="index.php?doLogout=1">Logout</a></li>

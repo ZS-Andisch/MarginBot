@@ -206,7 +206,7 @@ $(function () {
 					data: intReturn,
 					yAxis:1,
 					tooltip: {
-						valueDecimals: 4
+						valueDecimals: 5
 					},
 					color: '#052487',
 					dataGrouping:{
