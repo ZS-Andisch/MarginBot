@@ -495,9 +495,6 @@ class General {
 								<div id="collapse'.$key.'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading'.$key.'">
 								  <div class="panel-body">
 										<div class="media" style="border-bottom:1px solid #e5e5e5;padding-bottom:20px;" >
-										  <a class="media-left">
-											<img src="https://chart.googleapis.com/chart?chs=175x175&chld=M%7C0&cht=qr&chl='.$da.'" alt="Dontate '.strtoupper($key).': '.$da.'">
-										  </a>
 										  <div class="media-body" style="vertical-align: middle;">
 											<h4 class="media-heading" style="max-width: 360px;word-wrap: break-word;">'.strtoupper($key).': '.$da.'</h4>
 										  </div>
