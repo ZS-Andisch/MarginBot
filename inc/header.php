@@ -130,7 +130,7 @@ $gen->checkCronStatus();
 
 <? if($_SESSION['userid']!=''){ ?>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -151,10 +151,6 @@ $gen->checkCronStatus();
                         </ul>
                     </li>
 
-                    <? if($act->sts == 9 || $act->sts == 8){ ?>
-                        <li class="<?=($pages->activePage == 'addAct' ? 'active' : '');?>"><a href="index.php?page=addAct">Add Account</a></li>
-                    <? } ?>
-
                     <li class="dropdown <?=($pages->activePage == 'viewReturns' || $pages->activePage == 'grabHistory' ? 'active' : '');?>">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">View Overall Returns <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -162,13 +158,12 @@ $gen->checkCronStatus();
                             <li><a href="index.php?page=grabHistory">Grab Return History From Bitfinex</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Feedback <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="mailto:<?=$config['app_support_email'];?>">Email</a></li>
-                            <li><a href="<?=$config['app_support_url'];?>" target="_blank">Forums</a></li>
-                        </ul>
-                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav pull-right">
+                    <? if($act->sts == 9 || $act->sts == 8){ ?>
+                        <li class="<?=($pages->activePage == 'addAct' ? 'active' : '');?>"><a href="index.php?page=addAct">Add Account</a></li>
+                    <? } ?>
                     <li><a href="index.php?doLogout=1">Logout</a></li>
                 </ul>
 
