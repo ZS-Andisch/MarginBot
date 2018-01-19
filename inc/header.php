@@ -138,7 +138,7 @@ $gen->checkCronStatus();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php" title="Version <?=$config['app_version'].'.'.$config['app_version_minor'];?>"><img src="img/MarginBotLogo.png" alt="MarginBot" class="img-responsive center-block" style="width:250px;"></a>
+                <a class="navbar-brand" href="index.php" title="Version <?=$config['app_version'].'.'.$config['app_version_minor'];?>"><img src="img/MarginBotLogo.png" alt="MarginBot" class="img-responsive center-block" style="height:35px; margin-top: -7px;"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 
@@ -191,4 +191,4 @@ if (file_exists($installFile) && $_SESSION['userid']!='') {$notice[] = "Your Ins
 
 ?>
 
-<div class="container">
+<div class="container-fluid">
